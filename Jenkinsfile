@@ -27,6 +27,7 @@ node {
         sh("echo http://`kubectl --namespace=production get service/${feSvcName} --output=json | jq -r '.status.loadBalancer.ingress[0].ip'` > ${feSvcName}")
         break
 
+    
     // Roll out to production
     case "master":
         // Change deployed image in canary to the one we just built
