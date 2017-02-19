@@ -1,5 +1,5 @@
 node {
-  def projet = 'Tets_project'
+  def projet = 'sample-app'
   def appName = 'gceme'
   def feSvcName = "${appName}-frontend"
   def imageTag = "gcr.io/${project}/${appName}:${env.BRANCH_NAME}.${env.BUILD_NUMBER}"
