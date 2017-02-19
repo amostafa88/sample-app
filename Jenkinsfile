@@ -1,4 +1,5 @@
 node {
+  
   def projet = 'sample-app'
   def appName = 'gceme'
   def feSvcName = "${appName}-frontend"
